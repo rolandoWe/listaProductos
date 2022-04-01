@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Precios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="contenedor">
+      <div class="contenedorSaludo">
+          <div class="saludo">
+              <h1>Hola Bienvenido(a)</h1>
+              <p>Esta es un Software pensado para comerciantes. En el cual puedes crear lista de productos con sus respectivos precios y luego guardalos en un almacenamiento local (LocalStorage).
+                Puedes agregar, eliminar y consultar lista de los productos solo dando click en el respectivo boton dependiento de lo que quieras hacer. <br> <br> Recuerda que los datos que ingreses se guardaran en tu navegador y estaran ahi hasta que tu los borres.
+              </p>
+              <div class="botones">
+                  <h2 class="pregunta">Que quieres hacer?</h2>
+                  <div class="boton">
+                      <input type="button" class="boton_add" value="Agregar producto">
+                      <input type="button" class="boton_buscar" value="Buscar producto">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <div class="contBuscar">
+            <i class="fa-solid fa-circle-xmark close"></i>
+            <p>Buscar producto</p>
+
+            <div class="agregar">
+                <input type="text" placeholder="buscar" class="buscar">
+                <i class="fa-solid fa-magnifying-glass btn_buscar"></i>
+            </div>
+             <ul class="ul_buscar">
+                 <li class="li_buscar">producto</li>
+             </ul>
+        </div>
+         <div class="caja_formulario">
+            <i class="fa-solid fa-circle-xmark close"></i>
+
+            <form action="" class="formulario">
+                <p>Agregar Productos</p>
+                <div class="inputs">
+                    <div class="grupo_input">
+                        <label for="">Producto</label>
+                        <input type="text" placeholder="producto" class="producto">
+                    </div>
+                    <div class="grupo_input">
+                        <label for="">Precio</label>
+                        <input type="number" placeholder="precio" class="precio" size="4">
+                    </div>
+
+
+                    <input type="submit" value="ok" class="ok">
+                </div>
+    
+            </form>
+
+            <div class="contenedor_salida">
+                <ul class="salida">
+                    <li id="0" class="li">
+                    <p class="salida_p">mango</p>
+                    <p class="salida_precio">mango</p>
+                    <i class="fa-solid fa-trash"></i>
+                    </li>
+                </ul>
+            </div>
+         </div>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

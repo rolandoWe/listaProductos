@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    margin: auto;
+    background-color: antiquewhite;
+    width:100%;
+    max-width: 1200px;
+    height: 100vh;
+    font-family: "public sans";
+}
+.contenedorSaludo{
+    background: linear-gradient(rgb(95, 95, 252),rgb(187, 187, 247));
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+
+}
+.saludo{
+    width:80%;
+    margin: auto;
+    padding: 5px;
+    background: linear-gradient(rgb(204, 204, 252),rgb(146, 146, 255));
+    border-radius: 5px;
+}
+.saludo h1{
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+}
+.saludo p{
+    font-size: 20px;
+    padding: 5px 2px;
+    margin-top: 50px;
+}
+.pregunta{
+    text-align: center;
+    padding: 5px;
+    margin-top: 50px;
+}
+.botones{
+    width:100%;
+    /* background-color: aqua; */
+    /* height:30px */
+}
+.boton{
+    /* background-color: aqua; */
+    width:80%;
+    height:30px;
+    margin:20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.boton input{
+    width:200px;
+    height:100%;
+     border: none;
+     font-size: 20px;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 5px;
+     transition: .3s;
+}
+.boton input:nth-child(1){
+    background-color: rgb(191, 250, 191);
+}
+.boton input:nth-child(1):hover{
+    background-color: rgb(113, 255, 113);
+}
+.boton input:nth-child(2){
+    background-color: rgb(4, 20, 145);
+    color: white;
+}
+.boton input:nth-child(2):hover{
+    background-color: rgb(75, 96, 255);
+}
+.close{
+    position: absolute;
+    top:10px;
+    right:10px;
+    color:rgb(2, 2, 102);
+    font-size: 20px;
+    cursor: pointer;
+}
+.close_buscar:hover,.close_agregar:hover{
+    color:rgb(214, 3, 3);
+
+}
+.contBuscar,.caja_formulario{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgb(106, 106, 250),rgb(196, 196, 245));
+    width:100%;
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    /* border:solid black 1px; */
+    transform: translateY(-200%);
+}
+.mostrar_caja{
+    transform: translateY(0%);
+
+}
+.agregar{
+    width:30%;
+    /* height:30px; */
+    background-color: rgb(1, 1, 153);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin:5px auto;
+}
+.contBuscar p{
+    width:100%;
+    /* background-color: aqua; */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.buscar{
+    width:85%;
+    height:25px;
+    border:none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+}
+.btn_buscar{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+}
+.ul_buscar{
+    /* background-color: rgb(156, 158, 160); */
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.li_buscar{
+    background-color: rgb(255, 255, 255);
+    margin: 2px 0;
+    list-style: none;
+    padding:1px 5px;
+    font-size: 18px;
+}
+
+.formulario{
+    /* background-color: rgb(179, 179, 179); */
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.formulario p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+/* .formulario label{
+    display: inline-block;
+    width:50px;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: right;
+} */
+/* .inputs input[type="text"]{
+    width:150px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.inputs input[type="number"]{
+    width:65px;
+    padding-left: 5px;
+    font-size: 18px;
+
+}
+.inputs input[type="submit"]{
+    width:30px;
+    height:30px;
+    border: none;
+    font-size: 18px;
+    background-color: greenyellow;
+} */
+.inputs{
+    position: relative;
+    background-color: rgb(181, 193, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 60px;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+.inputs input{
+    height: 30px;
+    border: none;
+    outline: none;
+}
+.grupo_input{
+    /* border: solid black 1px; */
+    width:40%;
+    /* background-color: rgb(66, 66, 177); */
+}
+.grupo_input label{
+    /* background-color: aqua; */
+    width:100%;
+    display: inline-block;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.grupo_input input{
+    width:100%;
+    padding-left: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.ok{
+    background-color: rgb(6, 4, 178);
+    height:30px;
+    width: 30px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right:5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.contenedor_salida{
+    width: 80%;
+    margin: auto;
+}
+.salida{
+    overflow-y: scroll;
+    height: 400px;
+    background-color: black;
+    padding-bottom: 12px ;
+    /* margin-bottom: 20px; */
+}
+/* .salida::-webkit-scrollbar{
+    width:4px;
+    background-color:red 
+} */
+.li{
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    /* height: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px;
+    box-sizing: border-box;
+    margin: 2px 0;
+    font-size: 18px;
+}
+
+.salida_p,.salida_precio{
+    width:40%;
+    /* background-color: aliceblue; */
+    /* text-align: center; */
+    padding-left: 5px;
+}
+.salida i{
+    color:rgb(252, 103, 58)
+}
+
+@media (max-width:576px){
+    .formulario{
+        width: 100%;
+    }
+    .contenedor_salida{
+        width: 100%;
+    }
+    .inputs{
+    padding: 5px 10px;
+
+    }
+    .ok{
+        bottom: 5px;
+        right: 10px;
+    }
+    .saludo{
+        width: 100%;
+        background: transparent;
+    }
+    .saludo p{
+        margin-top: 5px;
+    }
+    .boton input{
+        width:130px;
+        font-size: 15px
+    }
+    .agregar{
+        width:90%
+    }
+    .ul_buscar{
+        width: 100%;
+        height: 450px;
+    }
+}
