@@ -36,7 +36,7 @@ ul_buscar.innerHTML=""
     }
   
 }
-Buscar()
+// Buscar()
 btn_buscar.addEventListener("click",(f)=>{
     Buscar()
 })
