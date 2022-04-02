@@ -59,7 +59,7 @@ function crearObjeto(producto,precio){
 }
 function pintarHtml(){
     salida.innerHTML=""
-    let array=JSON.parse(localStorage.getItem("producto")).reverse()
+    let array=JSON.parse(localStorage.getItem("producto"))
     for(let a of array){
         if(array){
             salida.innerHTML+=`
@@ -70,9 +70,12 @@ function pintarHtml(){
             </li>
             `;
         }
-        if(a){
+        if(array!=null){
             arr=array
         }
+        // if(a==null){
+        //     arr=[]
+        // }
 
 
 }
@@ -144,8 +147,7 @@ document.addEventListener("keyup",(f)=>{
     }
 })
 
-pintarHtml()
-mantenerId()
+
 
 boton_add.addEventListener("click",()=>{
     document.querySelector(".caja_formulario").classList.toggle("mostrar_caja")
@@ -162,3 +164,7 @@ c.addEventListener("click",()=>{
     // c.classList.remove("mostrar_caja")
 })
 })
+
+
+pintarHtml()
+mantenerId()
