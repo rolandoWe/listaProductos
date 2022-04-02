@@ -250,7 +250,7 @@
 .salida{
     overflow-y: scroll;
     height: 400px;
-    background-color: black;
+    /* background-color: black; */
     padding-bottom: 12px ;
     /* margin-bottom: 20px; */
 }

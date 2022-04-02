@@ -65,7 +65,7 @@ function pintarHtml(){
             salida.innerHTML+=`
             <li id="${a.id}" class="li">
             <p class="salida_p">${a.producto}</p>
-            <p class="salida_precio">Precio: $${a.precio}</p>
+            <p class="salida_precio">Precio: <strong>$ ${a.precio}</strong></p>
             <i class="fa-solid fa-trash"></i>
             </li>
             `;
